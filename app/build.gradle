@@ -4,15 +4,15 @@ plugins {
 
 android {
     namespace 'com.vimsitsolutions.ads'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.vimsitsolutions.ads"
-        minSdk 24
-        targetSdk 33
+        minSdk 19
+        targetSdk 34
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -30,7 +30,7 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.12.0'
     implementation project(path: ':Ads2024')
     testImplementation 'junit:junit:4.13.2'

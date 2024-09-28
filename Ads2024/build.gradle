@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace 'com.vimsitsolutions.ads2024'
-    compileSdk 33
+    namespace 'com.newAds2021'
+    compileSdk 34
 
     defaultConfig {
         minSdk 19
-        targetSdk 33
-
+        targetSdk 34
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -28,9 +28,18 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.12.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    implementation 'androidx.browser:browser:1.8.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.work:work-runtime:2.9.1'
 }
